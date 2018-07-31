@@ -1,8 +1,9 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
+@Html.Partial("_LandingTemplate")
 <div class="jumbotron">
+
     <!--Property Listing-->
     <section class="property-listing">
         <div class="auto-container">
@@ -212,8 +213,7 @@
             </div>
         </div>
     </section>
-<!-- End Property Listing-->
-
+    <!-- End Property Listing-->
     <!--Popular Places-->
     <section class="popular-places">
         <div class="auto-container">
@@ -344,8 +344,7 @@
             </div>
         </div>
     </section>
-<!-- End Popular Places-->
-
+    <!-- End Popular Places-->
     <!--Main Footer-->
     <footer class="main-footer with-padding-top">
         <!--Widgets Section-->
@@ -394,8 +393,12 @@
                                     <div class="widget-content">
                                         <div class="text">Feel free to ger in touch with us via phone or send us a message.</div>
                                         <ul class="contact-info">
-                                            <li><div class="icon"><span class="fa fa-envelope-o"></span></div> <a href="mailto:contact@luminuxhousing.com">contact@luminuxhousing.com</a></li>
-                                            <li><div class="icon"><span class="fa fa-phone"></span></div> +880 100 000 0000</li>
+                                            <li>
+                                                <div class="icon"><span class="fa fa-envelope-o"></span></div> <a href="mailto:contact@luminuxhousing.com">contact@luminuxhousing.com</a>
+                                            </li>
+                                            <li>
+                                                <div class="icon"><span class="fa fa-phone"></span></div> +880 100 000 0000
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -423,6 +426,6 @@
             </div>
         </div>
     </footer>
-<!--End Main Footer-->
+    <!--End Main Footer-->
 
 </div>
