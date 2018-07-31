@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+    <link href="~/Content/TemplateFile/css/bootstrap.css" rel="stylesheet">
+    <link href="~/Content/TemplateFile/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="~/Content/TemplateFile/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/Content/TemplateFile/images/favicon.ico" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="~/Content/TemplateFile/css/responsive.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+<div class="container body-content">
+    
+   @* @Html.Partial("_LandingTemplate")*@
+    
+    @RenderBody()
+    
+</div>   
+
+    @*@RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>*@
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+<script src="~/Content/TemplateFile/js/jquery.js"></script> 
+<script src="~/Content/TemplateFile/js/bootstrap.min.js"></script>
+<script src="~/Content/TemplateFile/js/jquery-ui.js"></script>
+<script src="~/Content/TemplateFile/js/jquery.fancybox.pack.js"></script>
+<script src="~/Content/TemplateFile/js/jquery.fancybox-media.js"></script>
+<script src="~/Content/TemplateFile/js/mixitup.js"></script>
+<script src="~/Content/TemplateFile/js/owl.js"></script>
+<script src="~/Content/TemplateFile/js/wow.js"></script>
+<script src="~/Content/TemplateFile/js/appear.js"></script>
+<script src="~/Content/TemplateFile/js/script.js"></script>
+
+</body>
+</html>
